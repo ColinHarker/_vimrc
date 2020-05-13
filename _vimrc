@@ -99,6 +99,12 @@ vnoremap * y/<C-R>"<CR>
 nnoremap <silent> <F8> :!gcc -o %< % && %<<CR> 
 nnoremap <silent> <F9> :!g++ -o %< % && %<<Cr>
 
+inoremap { {<CR><BS>}<Esc>ko
+inoremap ( ()<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+inoremap [ []<Esc>i
+
 " vim -b : edit binary using xxd-format!
 augroup Binary
 	au!
